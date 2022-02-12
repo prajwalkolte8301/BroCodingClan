@@ -8,3 +8,5 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   isBuyer: { type: Boolean, required: true },
 });
+
+module.exports = mongoose.model("User", userSchema);
